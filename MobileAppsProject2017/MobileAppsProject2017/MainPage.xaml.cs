@@ -70,6 +70,7 @@ namespace MobileAppsProject2017
 
             await MarvelFacade.PopulateMarvelComicsAsync(selectedChar.id, MarvelComics);
 
+
             APIAccess.IsActive = false;
             APIAccess.Visibility = Visibility.Collapsed;
 
