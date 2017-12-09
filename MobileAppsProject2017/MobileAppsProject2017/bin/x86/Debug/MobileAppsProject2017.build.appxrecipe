@@ -10,13 +10,13 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>980fc444-f1ca-458f-b8c4-caf3d54ffa5a</PackageIdentityName>
     <PackageIdentityPublisher>CN=Karle Sleith</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
@@ -380,7 +380,7 @@
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\Core\MobileAppsProject2017.exe">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\Core\MobileAppsProject2017.exe">
       <PackagePath>MobileAppsProject2017.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

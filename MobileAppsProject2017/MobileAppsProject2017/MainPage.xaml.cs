@@ -81,5 +81,20 @@ namespace MobileAppsProject2017
         {
 
         }
+
+        //Searching the Marvel Comics Database for the char typed in the SearchBar
+        private async void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            APIAccess.IsActive = true;
+            APIAccess.Visibility = Visibility.Visible;
+
+
+            MarvelHeroes.Clear();
+
+            await MarvelFacade.PopulateSearchMarvelCharactersAsync(SearchBar.Text,MarvelHeroes);
+
+            APIAccess.IsActive = false;
+            APIAccess.Visibility = Visibility.Collapsed;
+        }
     }
 }

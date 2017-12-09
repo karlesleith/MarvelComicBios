@@ -58,6 +58,41 @@ namespace MobileAppsProject2017
             }
         }
 
+        public static async Task PopulateSearchMarvelCharactersAsync(string sn,ObservableCollection<Character> marvelCharacters)
+        {
+            try
+            {
+                var characterDataWrapper = await GetSearchCharacterDataWrapperAsync(sn);
+
+                var characters = characterDataWrapper.data.results;
+
+                foreach (var character in characters)
+                {
+                    // Filter characters that are missing thumbnail images
+
+                    if (character.thumbnail != null
+                        && character.thumbnail.path != "")
+                    {
+
+                        character.thumbnail.small = String.Format("{0}/standard_small.{1}",
+                            character.thumbnail.path,
+                            character.thumbnail.extension);
+
+                        character.thumbnail.large = String.Format("{0}/portrait_xlarge.{1}",
+                            character.thumbnail.path,
+                            character.thumbnail.extension);
+
+                        marvelCharacters.Add(character);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return;
+            }
+        }
+
+
 
         public static async Task PopulateMarvelComicsAsync(int characterId, ObservableCollection<ComicBook> marvelComics)
         {
@@ -95,6 +130,8 @@ namespace MobileAppsProject2017
 
 
 
+
+
         private static async Task<CharacterDataWrapper> GetCharacterDataWrapperAsync()
         {
             // Assemble the URL
@@ -113,6 +150,24 @@ namespace MobileAppsProject2017
             var result = (CharacterDataWrapper)serializer.ReadObject(ms);
             return result;
         }
+
+
+        private static async Task<CharacterDataWrapper> GetSearchCharacterDataWrapperAsync(string searchName)
+        {
+     
+            string url = String.Format("https://gateway.marvel.com:443/v1/public/characters?nameStartsWith={0}&limit=10",
+                searchName);
+
+            var jsonMessage = await CallMarvelAsync(url);
+
+            // Response -> string / json -> deserialize
+            var serializer = new DataContractJsonSerializer(typeof(CharacterDataWrapper));
+            var ms = new MemoryStream(Encoding.UTF8.GetBytes(jsonMessage));
+
+            var result = (CharacterDataWrapper)serializer.ReadObject(ms);
+            return result;
+        }
+
 
         private static async Task<ComicDataWrapper> GetComicDataWrapperAsync(int characterId)
         {

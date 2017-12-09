@@ -14,9 +14,10 @@
         <RelativePanel Height="Auto" Background="Red">
             <TextBlock x:ConnectionId='13' Name="Marvel" Text="MARVEL COMICS" Foreground="White" FontSize="24
                        " FontWeight="Bold" Margin="10,0,0,0" />
-            <TextBlock x:ConnectionId='14' Name="hr" Text="Hero Name:" Foreground="White" FontSize="12
-                       " FontWeight="Bold" Margin="30,0,0,0" RelativePanel.RightOf="Marvel" RelativePanel.AlignBottomWith="Marvel" />
-            <TextBox Text="Search" Foreground="AntiqueWhite" RelativePanel.RightOf="hr" RelativePanel.AlignVerticalCenterWith="Marvel"  MinWidth="15" MinHeight="20" MaxWidth="500" MaxHeight="50"/>
+            <TextBlock x:ConnectionId='14' Name="hr" Text="Hero Name:" Foreground="White" FontSize="12" FontWeight="Bold" Margin="30,0,0,0" RelativePanel.LeftOf="SearchBar" RelativePanel.AlignBottomWith="Marvel" />
+            <TextBox x:ConnectionId='15' Name="SearchBar" Text="" Foreground="AntiqueWhite"  RelativePanel.AlignVerticalCenterWith="Marvel"  MinWidth="150" MinHeight="20" MaxWidth="500" MaxHeight="50" RelativePanel.LeftOf="SearchButton" />
+            <Button x:ConnectionId='16' Name="SearchButton" Content="Search"                             RelativePanel.AlignRightWithPanel="True" Foreground="White" FontWeight="Bold"></Button>
+            
         </RelativePanel>
       
     
@@ -67,9 +68,7 @@
                     <TextBlock x:ConnectionId='9' Name="CharBio" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" FontSize="24" Margin="10"/>
 
                 </Grid>
-                <!--List for the comic book -->
-
-
+                
                 <!-- List of Comics -->
                 <GridView x:ConnectionId='5' Grid.Row="1" 
                                                           
@@ -83,7 +82,7 @@
                 </GridView>
 
             </Grid>
-            <TextBlock Text="Data provided by Marvel. © 2017 Marvel" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="2" />
+            <TextBlock Text="Data provided by Marvel. © 2017 Marvel" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1" />
 
         <ProgressRing x:ConnectionId='4' Name="APIAccess" Width="100" Height="100" Foreground="Red" Grid.ColumnSpan="2" Grid.RowSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
