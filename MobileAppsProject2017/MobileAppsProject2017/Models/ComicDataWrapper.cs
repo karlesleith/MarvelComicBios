@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//Comic Wrapper Details from Marvels APi
+
 namespace MobileAppsProject2017.Models
 {
     public class TextObject

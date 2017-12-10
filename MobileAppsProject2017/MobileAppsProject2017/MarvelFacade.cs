@@ -14,19 +14,22 @@ using Windows.Security.Cryptography.Core;
 using Windows.Storage.Streams;
 
 
-//REF: https://buteauapi.wordpress.com/heroname/
+//Facade Class that acts as an interface for the Comic and Character Wrapper models
 
 namespace MobileAppsProject2017
 {
     public class MarvelFacade
     {
+        //My personal public and private API keys provided by Marvel
         private const string PrivateKey = "f9d25b01acde4a058e4745279142ea856ca10adc";
         private const string PublicKey = "33948e556bc7277d93fb9f6d95b01efc";
         private const int MaxCharacters = 1500;
 
+
+        //Populate the CharView, making a call to Marvels API
         public static async Task PopulateMarvelCharactersAsync(ObservableCollection<Character> marvelCharacters)
         {
-            try
+            try 
             {
                 var characterDataWrapper = await GetCharacterDataWrapperAsync();
 
@@ -34,7 +37,7 @@ namespace MobileAppsProject2017
 
                 foreach (var character in characters)
                 {
-                    // Filter characters that are missing thumbnail images
+                    // Filter characters with no thumbnails
 
                     if (character.thumbnail != null
                         && character.thumbnail.path != "")
@@ -58,6 +61,7 @@ namespace MobileAppsProject2017
             }
         }
 
+        //Search Function for looking for a specific Marvel Character 
         public static async Task PopulateSearchMarvelCharactersAsync(string sn,ObservableCollection<Character> marvelCharacters)
         {
             try
@@ -92,8 +96,7 @@ namespace MobileAppsProject2017
             }
         }
 
-
-
+        //Populate the comics in teh Detail view, after maing a call to Marvels APi
         public static async Task PopulateMarvelComicsAsync(int characterId, ObservableCollection<ComicBook> marvelComics)
         {
             try
@@ -128,10 +131,7 @@ namespace MobileAppsProject2017
             }
         }
 
-
-
-
-
+        //Init call to API chooses 10 random chars 
         private static async Task<CharacterDataWrapper> GetCharacterDataWrapperAsync()
         {
             // Assemble the URL
@@ -168,7 +168,7 @@ namespace MobileAppsProject2017
             return result;
         }
 
-
+        //Get tha comics that relate to the char
         private static async Task<ComicDataWrapper> GetComicDataWrapperAsync(int characterId)
         {
             var url = String.Format("http://gateway.marvel.com:80/v1/public/comics?characters={0}&limit=10",
@@ -184,6 +184,8 @@ namespace MobileAppsProject2017
             return result;
         }
 
+
+        //Method used to make the bacic call to the api, we then decorate the url depending on our needs
         private async static Task<string> CallMarvelAsync(string url)
         {
             // Get the MD5 Hash
@@ -198,6 +200,8 @@ namespace MobileAppsProject2017
             return await response.Content.ReadAsStringAsync();
         }
 
+
+        //Creating the hashed api string required my Marvels API
         private static string CreateHash(string timeStamp)
         {
 

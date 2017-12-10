@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+//Data Wrapper from the Character Detail from Marvels API
+
 namespace MobileAppsProject2017.Models
 {
     public class Thumbnail

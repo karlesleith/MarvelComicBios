@@ -11,16 +11,15 @@
 
     <StackPanel>
 
+        <!--Nav Bar top of application, provides search box -->
         <RelativePanel Height="Auto" Background="Red">
             <TextBlock Name="Marvel" Text="MARVEL COMICS" Foreground="White" FontSize="24
                        " FontWeight="Bold" Margin="10,0,0,0" />
             <TextBlock Name="hr" Text="Hero Name:" Foreground="White" FontSize="12" FontWeight="Bold" Margin="30,0,0,0" RelativePanel.LeftOf="SearchBar" RelativePanel.AlignBottomWith="Marvel" />
             <TextBox Name="SearchBar" Text="" Foreground="AntiqueWhite"  RelativePanel.AlignVerticalCenterWith="Marvel"  MinWidth="150" MinHeight="20" MaxWidth="500" MaxHeight="50" RelativePanel.LeftOf="SearchButton" />
             <Button Name="SearchButton" Content="Search" Click="SearchButton_Click"  RelativePanel.AlignRightWithPanel="True" Foreground="White" FontWeight="Bold"></Button>
-            
         </RelativePanel>
-      
-    
+     <!-- Background grid that covers entire application-->
     <Grid Background="WhiteSmoke" >
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -32,7 +31,8 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <ListView Name="MasterView" ItemsSource="{x:Bind MarvelHeroes}" IsItemClickEnabled="True" ItemClick="MasterView_ItemClick" Background="Red">
+        <!-- Side Panel to display Chars-->
+        <ListView Name="CharView"  ItemsSource="{x:Bind MarvelHeroes}" IsItemClickEnabled="True" ItemClick="CharView_ItemClick" Background="Red">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="data:Character">
                     <StackPanel Orientation="Horizontal" Margin="5,10,10,0">
@@ -47,6 +47,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
+        <!-- View to Bind Character Information-->
             <Grid Name="DetailGrid" Grid.Column="1" Grid.Row="0" Margin="10" >
 
                 <Grid.RowDefinitions>
@@ -57,6 +58,7 @@
                 <Grid Grid.Row ="0" HorizontalAlignment="Left" VerticalAlignment="Top">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
@@ -66,6 +68,7 @@
                     <Image Name="CharBioImage" Grid.Column="0" Grid.RowSpan="2" VerticalAlignment="Top"/>
                     <TextBlock Name="CharBioName" Grid.Column="1" FontWeight="Bold" FontSize="32" Margin="10"/>
                     <TextBlock Name="CharBio" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" FontSize="24" Margin="10"/>
+                    <TextBlock Name="ListOfComics" Text="Comics Appreared in:" Grid.Row="2" Grid.Column="0" FontSize="24" FontWeight="Bold"/>
 
                 </Grid>
                 
@@ -81,9 +84,10 @@
                     </GridView.ItemTemplate>
                 </GridView>
 
+                <!--Attributions Required by Marvel Comics -->
             </Grid>
             <TextBlock Text="Data provided by Marvel. © 2017 Marvel" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1" />
-
+        <!--Loading Ring when making the call to the database -->
         <ProgressRing Name="APIAccess" Width="100" Height="100" Foreground="Red" Grid.ColumnSpan="2" Grid.RowSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
     </StackPanel>

@@ -25,7 +25,7 @@ namespace MobileAppsProject2017
     /// </summary>
     public sealed partial class MainPage : Page
     {
-
+        //Creating collections to be filled my the Facade
         public ObservableCollection<Character> MarvelHeroes{ get; set; }
         public ObservableCollection<ComicBook> MarvelComics { get; set; }
 
@@ -40,6 +40,7 @@ namespace MobileAppsProject2017
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
 
+            //On Page Loaded Populated the MasterView Grid with 10 Marvel Heroes
             APIAccess.IsActive = true;
             APIAccess.Visibility = Visibility.Visible;
             await MarvelFacade.PopulateMarvelCharactersAsync(MarvelHeroes);
@@ -48,9 +49,10 @@ namespace MobileAppsProject2017
             APIAccess.Visibility = Visibility.Collapsed;
         }
 
-        private async void MasterView_ItemClick(object sender, ItemClickEventArgs e)
+        private async void CharView_ItemClick(object sender, ItemClickEventArgs e)
         {
 
+            //When you click a character it makes a call to the api to populate the character information with comics they appeared it
             APIAccess.IsActive = true;
             APIAccess.Visibility = Visibility.Visible;
 
@@ -65,6 +67,8 @@ namespace MobileAppsProject2017
             largeImage.UriSource = uri;
 
             CharBioImage.Source = largeImage;
+
+            //INPORTANT, clear the observalble collection of any previous Comics, to be repopulated by the new char info
 
             MarvelComics.Clear();
 
@@ -89,6 +93,7 @@ namespace MobileAppsProject2017
             APIAccess.Visibility = Visibility.Visible;
 
 
+            //Clear the Hereoes in the CharacterView before your repopulate it with the search heroes
             MarvelHeroes.Clear();
 
             await MarvelFacade.PopulateSearchMarvelCharactersAsync(SearchBar.Text,MarvelHeroes);

@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>980fc444-f1ca-458f-b8c4-caf3d54ffa5a</PackageIdentityName>
     <PackageIdentityPublisher>CN=Karle Sleith</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-09T16:03:42.387</Modified>
+      <Modified>2017-12-10T15:59:33.986</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\MobileAppsProject2017.exe">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\MobileAppsProject2017.exe">
       <PackagePath>entrypoint\MobileAppsProject2017.exe</PackagePath>
-      <Modified>2017-12-09T16:03:41.870</Modified>
+      <Modified>2017-12-10T15:59:32.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Karle Sleith\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -456,45 +456,45 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-12-02T13:58:45.487</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T17:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\MobileAppsProject2017.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\MobileAppsProject2017.xr.xml">
       <PackagePath>MobileAppsProject2017.xr.xml</PackagePath>
       <Modified>2017-12-09T15:57:00.515</Modified>
     </AppxPackagedFile>
@@ -502,14 +502,14 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-02-28T11:09:21.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-09T15:59:40.740</Modified>
+      <Modified>2017-12-10T15:59:33.610</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Karle Sleith\documents\visual studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\Core\MobileAppsProject2017.exe">
+    <AppxPackagedFile Include="C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Debug\Core\MobileAppsProject2017.exe">
       <PackagePath>MobileAppsProject2017.exe</PackagePath>
-      <Modified>2017-12-09T16:03:42.380</Modified>
+      <Modified>2017-12-10T15:59:33.978</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
