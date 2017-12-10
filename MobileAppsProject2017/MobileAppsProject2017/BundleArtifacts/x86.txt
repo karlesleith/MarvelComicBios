@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\bin\x86\Release\MobileAppsProject2017_1.1.2.0_x86.appx
+SymbolPackage=C:\Users\Karle Sleith\Documents\Visual Studio 2015\Projects\MobileAppsProject2017\MobileAppsProject2017\AppPackages\MobileAppsProject2017_1.1.2.0_Test\MobileAppsProject2017_1.1.2.0_x86.appxsym

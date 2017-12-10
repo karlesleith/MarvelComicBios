@@ -1,0 +1,2 @@
+"/t:MobileAppsProject2017.Models.CharacterDataWrapper,MobileAppsProject2017,json"
+"/t:MobileAppsProject2017.Models.ComicDataWrapper,MobileAppsProject2017,json"
